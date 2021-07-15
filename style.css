@@ -1,0 +1,21 @@
+h2{
+    margin: 2% auto;
+    text-align: center;
+}
+
+table {
+    color: #000000;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+th {
+    padding: 15px;
+    border: 1px solid #000000;
+}
+
+td{
+    border: 1px solid grey;
+    text-align: center;
+}

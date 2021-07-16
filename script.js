@@ -113,10 +113,16 @@ function fetchData(){
   }
   
   //Display the sorted data 
-  
   function displayData(data) {
       var table = document.getElementById('myTable');
-  
+      var tBody = table.tBodies[0];
+
+      //Remove all existing TRs from the table
+      while(tBody.firstChild) {
+      tBody.removeChild(tBody.firstChild);
+      }
+
+      //Add new sorted data to table 
       for(var i = 0; i < data.length; i++){
           var row = `<tr>
                           <td>${data[i]['#']}</td>
